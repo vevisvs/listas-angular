@@ -1,4 +1,31 @@
 <div class="ctn-main">
-  <p>Aqui se va a renderizar un listado de alumnos!</p>
+  <div class="ctn-config">
+    <p>Listado de alumnos</p>
+    <section class="buttons">
+      <button>Mostrar</button>
+      <button>Ocultar</button>
+    </section>
+  </div>
+  <main class="lists">
+    <!-- <ul>
+      <li *ngFor="let alumno of listOfStudents; let i = index">
+        {{i + 1}} - {{alumno.name}} - {{alumno.age}}
+      </li>
+    </ul> -->
+    <table>
+      <tr>
+        <th>N°</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+      </tr>
+      <tr *ngFor="let alumno of listOfStudents; let i = index">
+        <td>{{i + 1}}</td>
+        <td>{{alumno.name}}</td>
+        <td>{{alumno.age}}</td>
+      </tr>
+    </table>
+  </main>
 </div>
+
+
 

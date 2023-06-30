@@ -2,4 +2,59 @@
   padding: 2rem;
   background-color: rgb(232, 238, 238);
   height: calc(100vh - 101px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+.lists{
+  background-color: white;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  height: 300px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.ctn-config{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  margin: 0 1rem 2rem 1rem;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(207, 228, 228);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+th {
+  width: 150px;
+  height: 40px;
+}
+
+td {
+  width: 150px;
+  height: 30px;
+  text-align: center;
 }
