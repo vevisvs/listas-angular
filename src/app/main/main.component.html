@@ -2,16 +2,11 @@
   <div class="ctn-config">
     <p>Listado de alumnos</p>
     <section class="buttons">
-      <button>Mostrar</button>
-      <button>Ocultar</button>
+      <button (click)="viewTable()">Mostrar</button>
+      <button (click)="dropTable()">Ocultar</button>
     </section>
   </div>
-  <main class="lists">
-    <!-- <ul>
-      <li *ngFor="let alumno of listOfStudents; let i = index">
-        {{i + 1}} - {{alumno.name}} - {{alumno.age}}
-      </li>
-    </ul> -->
+  <main class="lists" *ngIf="showTable" [ngClass]="changeBackground ? 'simple' : 'colourfull'">
     <table>
       <tr>
         <th>N°</th>
@@ -20,10 +15,11 @@
       </tr>
       <tr *ngFor="let alumno of listOfStudents; let i = index">
         <td>{{i + 1}}</td>
-        <td>{{alumno.name}}</td>
+        <td>{{alumno.name | uppercase}}</td>
         <td>{{alumno.age}}</td>
       </tr>
     </table>
+    <button (click)="changeColor()">Cambiar color de fondo</button>
   </main>
 </div>
 

@@ -16,15 +16,22 @@ p {
 }
 
 .lists{
-  background-color: white;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-  height: 300px;
-  width: 400px;
+  height: 500px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 8px;
+}
+
+.simple{
+  background-color: white;
+}
+
+.colourfull{
+  background: linear-gradient(0deg, rgba(34,193,195,0.5802696078431373) 0%, rgba(253,187,45,0.29735644257703087) 100%);
 }
 
 .ctn-config{
@@ -39,7 +46,7 @@ p {
 }
 
 button {
-  margin: 0 1rem 2rem 1rem;
+  margin: 2rem 1rem 2rem 1rem;
   padding: 0.6rem;
   border-radius: 8px;
   border: none;
@@ -54,7 +61,7 @@ th {
 }
 
 td {
-  width: 150px;
+  width: 180px;
   height: 30px;
   text-align: center;
 }
