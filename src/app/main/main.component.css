@@ -1,0 +1,5 @@
+.ctn-main{
+  padding: 2rem;
+  background-color: rgb(232, 238, 238);
+  height: calc(100vh - 101px);
+}
