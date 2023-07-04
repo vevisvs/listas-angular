@@ -1,5 +1,8 @@
-h1 {
+.ctn-header {
   padding: 2rem;
   background-color: rgb(98, 182, 182);
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
