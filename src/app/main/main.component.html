@@ -15,7 +15,10 @@
       </tr>
       <tr *ngFor="let alumno of listOfStudents; let i = index">
         <td>{{i + 1}}</td>
-        <td>{{alumno.name | uppercase}}</td>
+        <td *ngIf="alumno.age < 30; else bigger">{{alumno.name | lowercase}}</td>
+        <ng-template #bigger>
+          <td>{{alumno.name | uppercase}}</td>
+        </ng-template>
         <td [ngClass]="alumno.age > 30 ? 'bolder-red' : 'bolder-black'">{{alumno.age}}</td>
       </tr>
     </table>
