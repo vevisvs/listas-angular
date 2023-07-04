@@ -22,17 +22,17 @@ export class MainComponent {
   showTable = false;
   changeBackground = true;
 
-  viewTable(){
+  viewTable(): void{
     console.log("visualizando la tabla de alumnos");
     this.showTable = true;
   }
 
-  dropTable(){
+  dropTable(): void{
     console.log("ocultando la tabla de alumnos");
     this.showTable = false;
   }
 
-  changeColor(){
+  changeColor(): void{
     this.changeBackground = !this.changeBackground;
   }
 }

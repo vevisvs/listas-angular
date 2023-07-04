@@ -65,3 +65,12 @@ td {
   height: 30px;
   text-align: center;
 }
+
+.bolder-red{
+  font-weight: 600;
+  color: red;
+}
+
+.bolder-black{
+  font-weight: 600;
+}

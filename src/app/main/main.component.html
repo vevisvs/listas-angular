@@ -16,7 +16,7 @@
       <tr *ngFor="let alumno of listOfStudents; let i = index">
         <td>{{i + 1}}</td>
         <td>{{alumno.name | uppercase}}</td>
-        <td>{{alumno.age}}</td>
+        <td [ngClass]="alumno.age > 30 ? 'bolder-red' : 'bolder-black'">{{alumno.age}}</td>
       </tr>
     </table>
     <button (click)="changeColor()">Cambiar color de fondo</button>
